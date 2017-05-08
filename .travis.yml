@@ -1,6 +1,7 @@
 language: php
 sudo: false
-
+script:
+- phpunit
 after_success:
     - mkdir build
     - mv * build
